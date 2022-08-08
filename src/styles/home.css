@@ -1,0 +1,42 @@
+body {
+  height: 100vh;
+  background-image: url("./..//assets/home/background-home-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#explore-btn {
+  color: #0B0D17;
+  font-size: 32px;
+  width: 150px;
+  height: 150px;
+
+  transition: box-shadow 1s;
+}
+
+#explore-btn:hover {
+  box-shadow: 0 0 0 88px rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 640px) {
+  body {
+    background-image: url("./../assets/home/background-home-tablet.jpg");
+  }
+
+  #explore-btn {
+    width: 242px;
+    height: 242px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-image: url("./../assets/home/background-home-desktop.jpg");
+  }
+
+  #explore-btn {
+    width: 274px;
+    height: 274px;
+  }
+}

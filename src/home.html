@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+    <title>Space tourism website | Home</title>
+
+    <link href="./../dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/home.css">
+
+    <script defer src="./scripts/dropdawn-menu.js"></script>
+  </head>
+
+  <body class="max-h-screen">
+    <nav id="site-navigation"
+      class="px-6 pt-6 sm:px-0 sm:pt-0 sm:pl-10 flex justify-between items-center mb-12 md:mb-30 lg:mb-36">
+      <a class="w-10 md:w-12" href="./home.html">
+        <img src="./assets/shared/logo.svg" alt="logo">
+      </a>
+
+      <div class="sm:hidden">
+        <button id="open-btn">
+          <img src="./assets/shared/icon-hamburger.svg" alt="menu icon">
+        </button>
+
+        <dialog class="max-h-screen h-full w-2/3 p-8 left-auto right-0 top-0 bottom-0 m-0" id="menu">
+          <div class="flex justify-end mb-16">
+            <button id="hide-btn"><img src="./assets/shared/icon-close.svg" alt="close icon"></button>
+          </div>
+
+          <ul class="text-white">
+            <li class="mb-8"><a href="./home.html"><span class="font-bold">00</span>
+                Home</a></li>
+            <li class="mb-8"><a href="./destination.html"><span class="font-bold">01</span> Destination</a>
+            </li>
+            <li class="mb-8"><a href="./crew.html"><span class="font-bold">02</span> Crew</a></li>
+            <li class="mb-8"><a href="./technology.html"><span class="font-bold">03</span> Technology</a>
+            </li>
+          </ul>
+
+        </dialog>
+      </div>
+
+      <menu id="nav-menu" class="h-24 px-12 hidden sm:flex justify-between items-stretch gap-9">
+        <li class="flex justify-center items-center" id="current-page"><a href="./home.html"><span
+              class="font-bold">00</span>
+            Home</a></li>
+        <li class="flex justify-center items-center"><a href="./destination.html"><span class="font-bold">01</span>
+            Destination</a>
+        </li>
+        <li class="flex justify-center items-center"><a href="./crew.html"><span class="font-bold">02</span> Crew</a>
+        </li>
+        <li class="flex justify-center items-center"><a href="./technology.html"><span class="font-bold">03</span>
+            Technology</a>
+        </li>
+      </menu>
+    </nav>
+
+    <div class="mx-6 h flex flex-col items-center justify-between lg:flex-row lg:px-36 lg:items-end">
+      <article class="max-w-md mb-20 md:mb-40 lg:mb-0">
+        <h5 class="text-center uppercase mb-4">So, you want to travel to </h5>
+        <h1 class="text-center mb-4">SPACE</h1>
+        <p class="text-center">
+          Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind
+          of
+          on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!
+        </p>
+      </article>
+
+      <form class="w-fit" action="./destination.html">
+        <button id="explore-btn" class="inline-block bg-white rounded-full" type="submit">Explore</button>
+      </form>
+    </div>
+  </body>
+
+</html>
